@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>TC-01</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-01</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://demo.nopcommerce.com/<datalist><option>https://demo.nopcommerce.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Register<datalist><option>link=Register</option><option>xpath=//a[contains(text(),'Register')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Log in'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Wishlist'])[1]/preceding::a[2]</option><option>xpath=//*/text()[normalize-space(.)='Register']/parent::*</option><option>xpath=//a[contains(@href, '/register?returnUrl=%2F')]</option><option>xpath=//a</option><option>css=a.ico-register</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=gender-male<datalist><option>id=gender-male</option><option>name=Gender</option><option>xpath=//input[@id='gender-male']</option><option>xpath=//div[@id='gender']/span/input</option><option>xpath=//span/input</option><option>css=#gender-male</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=FirstName<datalist><option>id=FirstName</option><option>name=FirstName</option><option>xpath=//input[@id='FirstName']</option><option>xpath=//div[2]/input</option><option>css=#FirstName</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=FirstName<datalist><option>id=FirstName</option><option>name=FirstName</option><option>xpath=//input[@id='FirstName']</option><option>xpath=//div[2]/input</option><option>css=#FirstName</option></datalist></td><td>Nguyen</td>
+</tr>
+<tr><td>click</td><td>id=LastName<datalist><option>id=LastName</option><option>name=LastName</option><option>xpath=//input[@id='LastName']</option><option>xpath=//div[3]/input</option><option>css=#LastName</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=LastName<datalist><option>id=LastName</option><option>name=LastName</option><option>xpath=//input[@id='LastName']</option><option>xpath=//div[3]/input</option><option>css=#LastName</option></datalist></td><td>Nhut</td>
+</tr>
+<tr><td>select</td><td>name=DateOfBirthDay<datalist><option>name=DateOfBirthDay</option><option>xpath=//select[@name='DateOfBirthDay']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of birth:'])[1]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/preceding::select[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/preceding::select[3]</option><option>xpath=//div[4]/div/select</option><option>css=select[name="DateOfBirthDay"]</option></datalist></td><td>label=16</td>
+</tr>
+<tr><td>select</td><td>name=DateOfBirthMonth<datalist><option>name=DateOfBirthMonth</option><option>xpath=//select[@name='DateOfBirthMonth']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of birth:'])[1]/following::select[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::select[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/preceding::select[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/preceding::select[2]</option><option>xpath=//select[2]</option><option>css=select[name="DateOfBirthMonth"]</option></datalist></td><td>label=November</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of birth:'])[1]/following::option[44]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of birth:'])[1]/following::option[44]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::option[44]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/preceding::option[114]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/preceding::option[114]</option><option>xpath=//*/text()[normalize-space(.)='November']/parent::*</option><option>xpath=//select[2]/option[12]</option><option>css=select[name="DateOfBirthMonth"] &gt; option[value="11"]</option></datalist></td><td></td>
+</tr>
+<tr><td>select</td><td>name=DateOfBirthYear<datalist><option>name=DateOfBirthYear</option><option>xpath=//select[@name='DateOfBirthYear']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of birth:'])[1]/following::select[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::select[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/preceding::select[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/preceding::select[1]</option><option>xpath=//select[3]</option><option>css=select[name="DateOfBirthYear"]</option></datalist></td><td>label=1919</td>
+</tr>
+<tr><td>click</td><td>xpath=//option[@value='1919']<datalist><option>xpath=//option[@value='1919']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Date of birth:'])[1]/following::option[55]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[2]/following::option[55]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/preceding::option[103]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/preceding::option[103]</option><option>xpath=//*/text()[normalize-space(.)='1919']/parent::*</option><option>xpath=//select[3]/option[10]</option><option>css=option[value="1919"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=Email<datalist><option>id=Email</option><option>name=Email</option><option>xpath=//input[@id='Email']</option><option>xpath=//div[5]/input</option><option>css=#Email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=Email<datalist><option>id=Email</option><option>name=Email</option><option>xpath=//input[@id='Email']</option><option>xpath=//div[5]/input</option><option>css=#Email</option></datalist></td><td>123</td>
+</tr>
+<tr><td>click</td><td>id=Password<datalist><option>id=Password</option><option>name=Password</option><option>xpath=//input[@id='Password']</option><option>xpath=//div[4]/div[2]/div/input</option><option>css=#Password</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=ConfirmPassword<datalist><option>id=ConfirmPassword</option><option>name=ConfirmPassword</option><option>xpath=//input[@id='ConfirmPassword']</option><option>xpath=//div[4]/div[2]/div[2]/input</option><option>css=#ConfirmPassword</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=register-button<datalist><option>id=register-button</option><option>name=register-button</option><option>xpath=//button[@id='register-button']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[5]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Confirm password:'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Information'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sitemap'])[1]/preceding::button[1]</option><option>xpath=//div[5]/button</option><option>css=#register-button</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>id=Email-error<datalist><option>id=Email-error</option><option>xpath=//span[@id='Email-error']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[3]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Email:'])[1]/following::span[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Company Details'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Company name:'])[1]/preceding::span[1]</option><option>xpath=//*/text()[normalize-space(.)='Wrong email']/parent::*</option><option>xpath=//span[2]/span</option><option>css=#Email-error</option></datalist></td><td>Wrong email</td>
+</tr>
+<tr><td>verifyText</td><td>id=Password-error<datalist><option>id=Password-error</option><option>xpath=//span[@id='Password-error']</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[4]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::span[3]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Confirm password:'])[1]/preceding::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='*'])[5]/preceding::span[1]</option><option>xpath=//*/text()[normalize-space(.)='Password is required.']/parent::*</option><option>xpath=//div[4]/div[2]/div/span[2]/span</option><option>css=#Password-error</option></datalist></td><td>Password is required.</td>
+</tr>
+<tr><td>close</td><td>win_ser_local<datalist><option>win_ser_local</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-02</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://demo.nopcommerce.com/<datalist><option>https://demo.nopcommerce.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='$245.00'])[1]/following::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='$245.00'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='HTC - One (M8) 4G LTE Cell Phone with 32GB Memory - Gunmetal (Sprint)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add to compare list'])[3]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add to wishlist'])[3]/preceding::button[2]</option><option>xpath=//div[3]/div/div[2]/div[3]/div[2]/button</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=//li[@id='topcartlink']/a/span<datalist><option>xpath=//li[@id='topcartlink']/a/span</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='(0)'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Wishlist'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='(1)'])[1]/preceding::span[1]</option><option>xpath=//li[4]/a/span</option><option>css=span.cart-label</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=termsofservice<datalist><option>id=termsofservice</option><option>name=termsofservice</option><option>xpath=//input[@id='termsofservice']</option><option>xpath=//form[@id='shopping-cart-form']/div[3]/div[2]/div[3]/input</option><option>xpath=//div[3]/div[2]/div[3]/input</option><option>css=#termsofservice</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=checkout<datalist><option>id=checkout</option><option>name=checkout</option><option>xpath=//button[@id='checkout']</option><option>xpath=//form[@id='shopping-cart-form']/div[3]/div[2]/div[4]/button</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='(read)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='I agree with the terms of service and I adhere to them unconditionally'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Information'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sitemap'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Checkout']/parent::*</option><option>xpath=//div[2]/div[4]/button</option><option>css=#checkout</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gift Cards'])[2]/following::h1[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gift Cards'])[2]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Jewelry'])[2]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Checkout as a guest or register'])[1]/preceding::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Register and save time!'])[1]/preceding::h1[1]</option><option>xpath=//*/text()[normalize-space(.)='Welcome, Please Sign In!']/parent::*</option><option>xpath=//h1</option><option>css=h1</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gift Cards'])[2]/following::h1[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gift Cards'])[2]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Jewelry'])[2]/following::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Checkout as a guest or register'])[1]/preceding::h1[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Register and save time!'])[1]/preceding::h1[1]</option><option>xpath=//*/text()[normalize-space(.)='Welcome, Please Sign In!']/parent::*</option><option>xpath=//h1</option><option>css=h1</option></datalist></td><td>Welcome, Please Sign In!</td>
+</tr>
+<tr><td>close</td><td>win_ser_local<datalist><option>win_ser_local</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-03</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://demo.nopcommerce.com/<datalist><option>https://demo.nopcommerce.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Log in<datalist><option>link=Log in</option><option>xpath=//a[contains(text(),'Log in')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Register'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Wishlist'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='(0)'])[1]/preceding::a[1]</option><option>xpath=//a[contains(@href, '/login?returnUrl=%2F')]</option><option>xpath=//li[2]/a</option><option>css=a.ico-login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=Email<datalist><option>id=Email</option><option>name=Email</option><option>xpath=//input[@id='Email']</option><option>xpath=//div/input</option><option>css=#Email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=Email<datalist><option>id=Email</option><option>name=Email</option><option>xpath=//input[@id='Email']</option><option>xpath=//div/input</option><option>css=#Email</option></datalist></td><td>nhutnguyenminh@gmail.com</td>
+</tr>
+<tr><td>click</td><td>id=Password<datalist><option>id=Password</option><option>name=Password</option><option>xpath=//input[@id='Password']</option><option>xpath=//div[2]/input</option><option>css=#Password</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=Password<datalist><option>id=Password</option><option>name=Password</option><option>xpath=//input[@id='Password']</option><option>xpath=//div[2]/input</option><option>css=#Password</option></datalist></td><td>Minhnhat1511@</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Forgot password?'])[1]/following::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Forgot password?'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remember me?'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='About login / registration'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Information'])[1]/preceding::button[1]</option><option>xpath=//form/div[3]/button</option><option>css=button.button-1.login-button</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='$245.00'])[2]/following::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='$245.00'])[2]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='HTC - One (M8) 4G LTE Cell Phone with 32GB Memory - Gunmetal (Sprint)'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add to compare list'])[3]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Add to wishlist'])[3]/preceding::button[2]</option><option>xpath=//div[3]/div/div[2]/div[3]/div[2]/button</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>xpath=//div[@id='bar-notification']/div/p<datalist><option>xpath=//div[@id='bar-notification']/div/p</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='My account'])[1]/preceding::p[1]</option><option>xpath=//*/text()[normalize-space(.)='The product has been added to your']/parent::*</option><option>xpath=//p</option><option>css=p.content</option></datalist></td><td>The product has been added to your shopping cart</td>
+</tr>
+<tr><td>close</td><td>win_ser_local<datalist><option>win_ser_local</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-04</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://demo.nopcommerce.com/<datalist><option>https://demo.nopcommerce.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Log in<datalist><option>link=Log in</option><option>xpath=//a[contains(text(),'Log in')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Register'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Wishlist'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='(0)'])[1]/preceding::a[1]</option><option>xpath=//a[contains(@href, '/login?returnUrl=%2F')]</option><option>xpath=//li[2]/a</option><option>css=a.ico-login</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=Email<datalist><option>id=Email</option><option>name=Email</option><option>xpath=//input[@id='Email']</option><option>xpath=//div/input</option><option>css=#Email</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=Email<datalist><option>id=Email</option><option>name=Email</option><option>xpath=//input[@id='Email']</option><option>xpath=//div/input</option><option>css=#Email</option></datalist></td><td>nhutnguyenminh@gmail.com</td>
+</tr>
+<tr><td>type</td><td>id=Password<datalist><option>id=Password</option><option>name=Password</option><option>xpath=//input[@id='Password']</option><option>xpath=//div[2]/input</option><option>css=#Password</option></datalist></td><td>Minhnhat1511@</td>
+</tr>
+<tr><td>click</td><td>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Forgot password?'])[1]/following::button[1]<datalist><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Forgot password?'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Remember me?'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='About login / registration'])[1]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Information'])[1]/preceding::button[1]</option><option>xpath=//form/div[3]/button</option><option>css=button.button-1.login-button</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>xpath=//li[@id='topcartlink']/a/span<datalist><option>xpath=//li[@id='topcartlink']/a/span</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='(0)'])[1]/following::span[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Wishlist'])[1]/following::span[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='(6)'])[1]/preceding::span[1]</option><option>xpath=//*/text()[normalize-space(.)='Shopping cart']/parent::*</option><option>xpath=//li[4]/a/span</option><option>css=span.cart-label</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=discountcouponcode<datalist><option>id=discountcouponcode</option><option>name=discountcouponcode</option><option>xpath=//input[@id='discountcouponcode']</option><option>xpath=//form[@id='shopping-cart-form']/div[3]/div/div/div/div[3]/input</option><option>xpath=//div[3]/input</option><option>css=#discountcouponcode</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>id=discountcouponcode<datalist><option>id=discountcouponcode</option><option>name=discountcouponcode</option><option>xpath=//input[@id='discountcouponcode']</option><option>xpath=//form[@id='shopping-cart-form']/div[3]/div/div/div/div[3]/input</option><option>xpath=//div[3]/input</option><option>css=#discountcouponcode</option></datalist></td><td>AHCxasd4$</td>
+</tr>
+<tr><td>click</td><td>id=applydiscountcouponcode<datalist><option>id=applydiscountcouponcode</option><option>name=applydiscountcouponcode</option><option>xpath=//button[@id='applydiscountcouponcode']</option><option>xpath=//form[@id='shopping-cart-form']/div[3]/div/div/div/div[3]/button</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Enter your coupon here'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Discount Code'])[1]/following::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gift Cards'])[3]/preceding::button[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Enter gift card code'])[1]/preceding::button[1]</option><option>xpath=//*/text()[normalize-space(.)='Apply coupon']/parent::*</option><option>xpath=//div[3]/button</option><option>css=#applydiscountcouponcode</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>xpath=//form[@id='shopping-cart-form']/div[3]/div/div/div/div[4]<datalist><option>xpath=//form[@id='shopping-cart-form']/div[3]/div/div/div/div[4]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Apply coupon'])[1]/following::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Enter your coupon here'])[1]/following::div[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gift Cards'])[3]/preceding::div[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Enter gift card code'])[1]/preceding::div[2]</option><option>xpath=//*/text()[normalize-space(.)='The coupon code cannot be found']/parent::*</option><option>xpath=//div[3]/div/div/div/div[4]</option><option>css=div.coupon-box &gt; div.message-failure</option></datalist></td><td>The coupon code cannot be found</td>
+</tr>
+<tr><td>close</td><td>win_ser_local<datalist><option>win_ser_local</option></datalist></td><td></td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">TC-05</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>https://demo.nopcommerce.com/<datalist><option>https://demo.nopcommerce.com/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>link=Books<datalist><option>link=Books</option><option>xpath=//a[contains(text(),'Books')]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Digital downloads'])[1]/following::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Accessories'])[1]/following::a[2]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Jewelry'])[1]/preceding::a[1]</option><option>xpath=(.//*[normalize-space(text()) and normalize-space(.)='Gift Cards'])[1]/preceding::a[2]</option><option>xpath=//a[contains(@href, '/books')]</option><option>xpath=//li[5]/a</option></datalist></td><td></td>
+</tr>
+<tr><td>storeXpathCount</td><td>xpath=//div[@class="item-box"]<datalist><option>xpath=//div[@class="item-box"]</option></datalist></td><td>countitem</td>
+</tr>
+<tr><td>echo</td><td>${countitem}<datalist><option>${countitem}</option></datalist></td><td></td>
+</tr>
+<tr><td>close</td><td><datalist><option>win_ser_local</option><option></option></datalist></td><td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
